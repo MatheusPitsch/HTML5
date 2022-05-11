@@ -1,28 +1,63 @@
 <html>
 
-    <head></head>
+<head>
+    <link rel="stylesheet" href="style.css"> <!-- Importando do arquivo do CSS. -->
+</head>
 
-    <body 
-    style="margin-left: 25px;">
-        <form action="" method="post">
-            <h2>Login</h2>
-            <p>
-                <label for="text_nome">Nome:</label>
-                <input type="text" id="text_nome" required="required">
-            </p>
+<body>
+    <div class="container">
+        <div class="content">
+            <div id="login">
+                <form action="" method="post">
+                    <h2>Login</h2>
+                    <p>
+                        <label for="text_nome">Nome:</label>
+                        <input type="text" id="text_nome" required="required">
+                    </p>
 
-            <p>
-                <label for="text_email">e-mail</label>
-                <input type="text" id="text_email">
-            </p>
+                    <p>
+                        <label for="text_email">e-mail</label>
+                        <input type="text" id="text_email" required="required">
+                        <!-- required serve para o campo ser obrigatorio -->
+                    </p>
 
-            <p>
-                <input type="checkbox" name="check_logado" id="check_logado">
-                <label for="">Manter-se logado.</label>
-            </p>
+                    <p>
+                        <input type="checkbox" name="check_logado" id="check_logado">
+                        <label for="">Manter-se logado.</label>
+                    </p>
 
-            <input type="submit" value="Entrar">
-        </form>
-    </body>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+            <div id="cadastro">
+                <form action="" method="post">
+                    <h1>Cadastrar</h1>
+                    <p>
+                        <label for="Login">Login:</label>
+                        <input type="text" id="text_nome" required="requerid">
+                    </p>
+
+                    <p>
+                        <label for="Senha">Senha:</label>
+                        <input type="password" id="text_senha" required="requerid">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="text_email" required="requerid">
+                    </p>
+
+                    <p>
+                        <input type="submit" id="submit_cadastro" value="Cadastrar">
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+        <a href="https://www.w3schools.com/default.asp" target="_blank">w3schools</a>
+
+    </div>
+</body>
 
 </html>
